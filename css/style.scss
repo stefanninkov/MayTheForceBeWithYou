@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Background stars */
+
+.star {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background-color: white;
+}
+
+/* Lean the text */
+
+#content {
+    transform: perspective(600px) rotateX(25deg);
+    transform-origin: 50% 100%;
+    text-align: center;
+    position: absolute;
+    font-weight: bold;
+    overflow: hidden;
+    width: 100%;
+    bottom: 0;
+
+    #text {
+        color: rgb(247, 205, 50);
+        font-size: 120px;
+        line-height: 1.5em;
+
+        span {
+            position: relative;
+            display: inline-block;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
